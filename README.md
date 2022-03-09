@@ -16,3 +16,8 @@ pip install tensorflow
 pip install pandas
 pip install tensorflow-datasets
 ```
+# to run:
+
+```
+python3 Chatbot.py
+```
