@@ -28,6 +28,15 @@ pip install tensorflow
 pip install pandas
 pip install tensorflow-datasets
 ```
+# Alternate Windows (WSL)
+
+1. open powershell
+2. run this command:
+```
+wsl --install -d Ubuntu
+wsl -d Ubuntu
+```
+3. run the linux install commands in the wsl console
 # to run:
 
 ```
