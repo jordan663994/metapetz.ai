@@ -3,7 +3,7 @@ from numpy import random
 import tensorflow_datasets as tfds
 import tensorflow as tf
 
-import matplotlib.pyplot as plt
+
 import os
 import PIL
 import time
@@ -16,7 +16,7 @@ import numpy as np
 import tensorflow_datasets as tfds
 import tensorflow as tf
 
-import matplotlib.pyplot as plt
+
 import os
 import PIL
 import time
