@@ -42,3 +42,6 @@ wsl -d Ubuntu
 ```
 python3 Chatbot.py
 ```
+# AI test Documentation
+
+All documentation can be found within documentation.md
