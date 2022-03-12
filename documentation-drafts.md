@@ -1,6 +1,6 @@
 # General Use Guide:
 
-To start, run the install instructions in the readme, then run the start command. once done, you will be asked to enter a username(does not matter what you enter). Once you have entered your username, you will be able to chat with a group of AI personas you can use you. After your conversation, you will find a file called "textpool3.textcache", please upload that file here: https://discord.com/channels/946095281731166289/951965918689366086.
+To start, run the install instructions in the readme, then run the start command. Once completed, you will be asked to enter a username (does not matter what you enter). When you have entered your username, you will be able to chat with a group of AI personas you can interact with. After your conversation is over, you will find a file called "textpool3.textcache", please upload that file here: https://discord.com/channels/946095281731166289/951965918689366086.
 
 --------------------------------------
 
@@ -8,7 +8,7 @@ To start, run the install instructions in the readme, then run the start command
 # Conversation Guidelines:
 
 1. When talking to the AI, please say things that are on topic, otherwise, it will ignore you.
-2. Please do not spam the AI, it will get very confused, and I will be using uploaded textcache files for future training data (which will contain said spam).
+2. Please do not spam the AI, it will cause confusion and due to MetaPetz using the uploaded textcache files for future training data this would not help us reach our goals ( since said spam will be containe in that file).
 3. No cursing, I shoud not have to say this, but I somehow do.
 4. Do not be a bad role model to the AI.
 5. Have some fun, explore, see what the AI can do.
