@@ -1,3 +1,4 @@
+
 import numpy as np
 from numpy import random
 import tensorflow_datasets as tfds
@@ -158,7 +159,7 @@ def makeText(one_step_model, name):
         next_char = tf.constant(["\n \n"+name +":"+ "\n \n"+ input("You:   ")+"\n \n"])
         result.append(next_char)
         a = False
-        b = random.randint(0,500)
+        b = random.randint(0,100)
         for i in range(b):
             progress = i / b
             print(f"generating... ({progress * 100}% complete)")
@@ -264,14 +265,16 @@ def load(text, vocab):
 
 
 
-path_to_file = tf.keras.utils.get_file('shakespeare.txt', 'https://storage.googleapis.com/download.tensorflow.org/data/shakespeare.txt')
+path_to_file = "training_data.textcache"
 
 name = input("Enter your name")
 
-vocab_source = open(path_to_file, 'rb').read().decode(encoding='utf-8')
+vocab_source = open(path_to_file, 'r').read()
 text = vocab_source[len(vocab_source) - 50000:]
 vocab = sorted(set(vocab_source))
-model = initialize(text, vocab)
+ini_text = text
+ini_text += text
+model = initialize(ini_text, vocab)
 #main loop
 
 for i in range(0, 25):
