@@ -1,4 +1,5 @@
 
+
 import numpy as np
 from numpy import random
 import tensorflow_datasets as tfds
@@ -156,7 +157,7 @@ def makeText(one_step_model, name):
         result = []
         res = []
         start = time.time()
-        next_char = tf.constant(["\n \n"+name +":"+ "\n \n"+ input("You:   ")+"\n \n"])
+        next_char = tf.constant(["\n \n"+name +":"+ "\n \n"+ input("You:   ")+"\n \n Data:"])
         result.append(next_char)
         a = False
         b = random.randint(0,100)
@@ -265,15 +266,14 @@ def load(text, vocab):
 
 
 
-path_to_file = "training_data.textcache"
+path_to_file = "training_data_gen2.textcache"
 
 name = input("Enter your name")
 
 vocab_source = open(path_to_file, 'r').read()
 text = vocab_source[len(vocab_source) - 50000:]
 vocab = sorted(set(vocab_source))
-ini_text = text
-ini_text += text
+ini_text = vocab_source
 model = initialize(ini_text, vocab)
 #main loop
 
