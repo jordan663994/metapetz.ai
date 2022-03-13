@@ -30,7 +30,7 @@ pip install tensorflow-datasets
 ```
 # Alternate Windows (WSL)
 
-1. open powershell
+1. open powershell as administrator
 2. run this command:
 ```
 wsl --install -d Ubuntu
