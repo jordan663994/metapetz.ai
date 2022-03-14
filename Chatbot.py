@@ -1,5 +1,3 @@
-
-
 import numpy as np
 from numpy import random
 import tensorflow_datasets as tfds
@@ -153,14 +151,14 @@ def initialize(text, vocab):
 def makeText(one_step_model, name):
     out2 = ""
     states = None
-    for i in range(10):
+    for i in range(3):
         result = []
         res = []
         start = time.time()
         next_char = tf.constant(["\n \n"+name +":"+ "\n \n"+ input("You:   ")+"\n \n Data:"])
         result.append(next_char)
         a = False
-        b = random.randint(0,100)
+        b = random.randint(50,100)
         for i in range(b):
             progress = i / b
             print(f"generating... ({progress * 100}% complete)")
@@ -207,7 +205,7 @@ def chat(model, textpool, vocab, name):
         .batch(BATCH_SIZE, drop_remainder=True)
         .prefetch(tf.data.experimental.AUTOTUNE))
     
-    history = model.fit(dataset, epochs=5)
+    history = model.fit(dataset, epochs=20)
     del history
     generator = OneStep(model, chars_from_ids, ids_from_chars, name)
     out = makeText(generator, name)
@@ -272,6 +270,8 @@ name = input("Enter your name")
 
 vocab_source = open(path_to_file, 'r').read()
 text = vocab_source[len(vocab_source) - 50000:]
+for i in range(5):
+	text += vocab_source
 vocab = sorted(set(vocab_source))
 ini_text = vocab_source
 model = initialize(ini_text, vocab)
