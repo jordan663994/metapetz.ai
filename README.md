@@ -39,6 +39,10 @@ python3 Chatbot.py
 
 All documentation can be found within documentation.md
 
+# Stay Updated:
+
+follow me on twitter, I tweet out every update to the AI, so don't get left behind! follow me here: https://twitter.com/MetapetAIJordan
+
 ----------------------------------------
 ----------------------------------------
 
