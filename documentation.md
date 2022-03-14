@@ -25,3 +25,14 @@ cd <dirname>
 3. Do you have a 64 bit python installation? if you have a 32 bit one, you need to uninstall it (which can be done through the python installer) and install the 64 bit one.
 4. Are you using a compatable computer, we support 64 bit platforms(the game may support those however because the AI will not be run locally in the game), not ARM, or 32 bit platforms.
 5. Still having a problem? Contact me via the metapetz discord here: https://discord.gg/bPb7y9Uc
+
+# If you cannot run winInstaller.bat:
+
+Because a batchfile is literally a bunch of commands, you can run those commands manually in a command prompt, just copy and paste this into your command prompt:
+```
+pip install tensorflow
+pip install pandas
+pip install tensorflow-datasets
+pip install numpy
+pip install Pillow
+```
