@@ -28,7 +28,7 @@ cd <dirname>
 
 # If you cannot run winInstaller.bat:
 
-Because a batchfile is literally a bunch of commands, you can run those commands manually in a command prompt, just copy and paste this into your command prompt:
+Because a batchfile is literally a bunch of commands, you can run those commands manually in a command prompt, just copy and paste this into your command prompt to do the exact same thing the batch file would do:
 ```
 pip install tensorflow
 pip install pandas
