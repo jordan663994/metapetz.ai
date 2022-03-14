@@ -19,7 +19,7 @@ pip install tensorflow-datasets
 ```
 # Windows install instructions:
 
-1. download python here: https://www.python.org/ftp/python/3.7.8/python-3.7.8rc1-amd64.exe and go through the install steps
+1. download python here: https://www.python.org/ftp/python/3.7.8/python-3.7.8rc1-amd64.exe and go through the install steps (and if it gives you checkboxes, check them)
 2. open winInstaller.bat
 # Alternate Windows (WSL)
 
