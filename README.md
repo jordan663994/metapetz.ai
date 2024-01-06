@@ -43,8 +43,6 @@ All documentation can be found within documentation.md
 
 follow me on twitter, I tweet out every update to the AI, so don't get left behind! follow me here: https://twitter.com/MetapetAIJordan
 
-I also have an NFT project on Solana: https://twitter.com/9a105749cfcbac1
-
 ----------------------------------------
 ----------------------------------------
 
